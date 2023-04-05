@@ -1,0 +1,18 @@
+<br><br><br><br>
+<% if (message) { %>
+    <div class="alert <%= message_type %>">
+        <strong><%= message %></strong>
+    </div>
+    <% } %>
+        <% if (errors) { %>
+            <ul style="padding-left: 0">
+                <% errors.forEach(function(err){ %>
+                    <li style="list-style: none;">
+                        <div class="alert alert-danger" >
+                            <strong ><%= err.msg %></strong>
+                        </div>
+                    </li>
+                    <% }) %>
+            </ul>
+            <% } %>
+                

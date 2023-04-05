@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pharmacare</title>
+    <link rel="stylesheet" href="/assets/login.css">
+</head>
+
+<body>
+    <div class="wrapper login">
+        <div class="container">
+            <div class="col-left">
+                <div class="login-text">
+                    <h2>Welcome to <br>PharmaCare</h2>
+                    <p>Sign In to<br>Continue!</p>
+                </div>
+            </div>
+
+            <div class="col-right">
+                <div class="login-form">
+                    <h2>Sign In</h2>
+                    <form method="post">
+                        <p>
+                            <label for="username">Username<span>*</span></label>
+                            <input type="text" id="username"  name="username" placeholder="Username or Email" required>
+                        </p>
+                        <p>
+                            <label for="password">Password<span>*</span></label>
+                            <input type="password" name="password" id="password" placeholder="Password" required>
+                        </p>
+                        <br>
+                        <p>
+                            <input class="logbutton" type="submit" name="submit" value="Sign In">
+                        </p>
+                    </form>
+                    <a href="/registration" class="regbutton"> New? Register as a Customer</a>
+                    <br>
+                    
+                    <% include inc/alert_msg.ejs %>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

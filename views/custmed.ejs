@@ -1,0 +1,73 @@
+<% include inc/view_header %>
+    <% include inc/cust_topmenu %>
+        <% include inc/str %>
+
+            <body style="background-color: white;">
+
+
+                <div id="page-wrapper" style="font-family: Product Sans;">
+
+                    <div class="container-fluid">
+
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h1 class="page-header text-center">
+                                    List of Drugs
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="container" style="float: left; font-size:17px;">
+                            <a href="/admin/custbuy" class="btn btn-primary btn-lg"
+                                style="background-color: rgb(19, 146, 155);">Click to Buy</a>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-5 col-lg-offset-3">
+
+
+                            </div>
+                        </div>
+                        <br>
+                        <hr>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Medicine Name</th>
+                                            <th>Category</th>
+                                            <th>Generic Name</th>
+                                            <th>Manufacturer Name</th>
+                                            <!-- <th>Action</th> -->
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <% medicine.forEach(function(item){ %>
+                                            <tr>
+                                                <td>
+                                                    <%= item.Medicine_Name %>
+                                                </td>
+                                                <td>
+                                                    <%= item.Category %>
+                                                </td>
+                                                <td>
+                                                    <%= item.Generic_Name %>
+                                                </td>
+                                                <td>
+                                                    <%= item.Manufacturer_Name %>
+                                                </td>
+
+                                            </tr>
+                                            <% }) %>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </body>
+
+
+            <% include inc/view_footer.ejs %>

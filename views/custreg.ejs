@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pharmacare</title>
+    <link rel="stylesheet" href="/assets/reg.css">
+</head>
+
+<body>
+    <div class="wrapper login">
+        <div class="container">
+            <div class="col-left">
+                <div class="login-text">
+                    <h2>Welcome to <br>PharmaCare</h2>
+                    <p>Please Register <br>here</p>
+                    <a href="/" class="signbutton"> Existing User? Sign In</a>
+                    
+                </div>
+            </div>
+
+            <div class="col-right">
+                <div class="login-form">
+                    <h2>Register</h2>
+                    <form method="post"  >
+                        <p>
+                            
+                            <input type="text" id="name"  name="name" placeholder="Name" required>
+                        </p>
+                        <p>
+                           
+                            <input type="email" id="email"  name="email" placeholder="Email" required>
+                        </p>
+                        <p>
+                           
+                            <input type="text" id="custname"  name="custname" placeholder="Username" required>
+                        </p>
+                        <p>
+                            <input type="password" name="custpass" id="custpass" placeholder="Password" required>
+                        </p>
+                        <p>
+                            <input type="submit" id="backb" name="submit" value="Register" onclick="function clicksub(params) {
+                                alert('Registration successful');
+                                
+                            }" >
+                        </p>
+                        
+                    </form>
+                    
+                
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

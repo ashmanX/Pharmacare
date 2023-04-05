@@ -1,0 +1,49 @@
+
+
+<div class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav side-nav"
+        style=" margin-top: 0.6pc;border-right: 0.5px solid #ffffff; padding-top: 0.7pc; padding-left: 0.5pc; background-color: white; font-family: Product Sans; width:14pc; color:rgb(1, 62, 67)">
+        <% if(user.UserType=='Admin' ){ %>
+            <li><a style="font-size:22px; font-weight: bolder; color: rgb(1, 62, 67);"><i
+                        class="fa fa-fw fa-shopping-cart"></i> Sales</a>
+                <ul class="nav child_menu">
+                    <li><a href="/admin/sale" style="color:rgb(1, 62, 67); font-size: 17px; ">New Sale</a></li>
+                    <li><a href="/admin/saleshistory" style="color:rgb(1, 62, 67); font-size: 17px;">Sales History</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a style="font-size:22px; font-weight: bolder; color: rgb(1, 62, 67);"><i
+                        class="fa fa-fw fa-database"></i> Inventory</a>
+                <ul class="nav child_menu">
+                    <li><a href="/admin/batch" style="color: rgb(1, 62, 67); font-size: 17px;">Batch</a></li>
+                    <li><a href="/admin/medicine" style="color: rgb(1, 62, 67); font-size: 17px;">Medicine</a></li>
+                    <li><a href="/admin/supplier" style="color: rgb(1, 62, 67); font-size: 17px;">Supplier</a></li>
+                    <li><a href="/admin/category" style="color: rgb(1, 62, 67); font-size: 17px;">Category</a></li>
+                    <li><a href="/admin/genericname" style="color: rgb(1, 62, 67); font-size: 17px;">Drug Generic
+                            Name</a></li>
+                    <li><a href="/admin/manufacturer" style="color: rgb(1, 62, 67); font-size: 17px;">Manufacturer</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="/admin/usermanagement" style="font-size:20px; font-weight: bold;color: rgb(1, 62, 67);"><i
+                        class="fa fa-fw fa-edit"></i> User Management</a>
+            </li>
+            <% } if(user.Usertype=='Staff') { %>
+                <li><a style="font-size:22px; font-weight: bolder;font-family: Product Sans; color: rgb(1, 62, 67);"><i
+                            class="fa fa-fw fa-shopping-cart"></i> Sales</a>
+                    <ul class="nav child_menu">
+                        <li><a href="/admin/sale" style="color: rgb(1, 62, 67); font-size: 17px;">New Sale</a></li>
+                        <li><a href="/admin/saleshistory" style="color: rgb(1, 62, 67); font-size: 17px;">Sales
+                                History</a></li>
+                    </ul>
+                </li>
+                <% } else{ %>
+                   
+                    <% }%>
+
+
+    </ul>
+</div>
+</nav>
